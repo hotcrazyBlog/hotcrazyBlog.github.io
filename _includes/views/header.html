@@ -35,9 +35,9 @@
           <div class="trigger">
             {%- for path in page_paths -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
-              <!-- {%- if my_page.title -%}
+              {%- if my_page.title -%}
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
-              {%- endif -%} -->
+              {%- endif -%}
             {%- endfor -%}
 
             {%- assign name = 'translate_langs' -%}
@@ -48,7 +48,7 @@
               {%- include functions.html func='get_value' default='en' -%}
               {%- assign lang = return -%}
               <span class="page-link">
-                  {%- include extensions/google-translate.html -%}
+                  <!-- {%- include extensions/google-translate.html -%} -->
               </span>
             {%- endif -%}
           </div>
