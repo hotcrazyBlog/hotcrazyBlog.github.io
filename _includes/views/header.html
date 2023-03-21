@@ -45,10 +45,10 @@
             {%- assign translate_langs = return -%}
             {%- if translate_langs.size > 0 -%}
               {%- assign name = 'lang' -%}
-              {%- include functions.html func='get_value' default='en' -%}
+              {%- include functions.html func='get_value' default='ko' -%}
               {%- assign lang = return -%}
               <span class="page-link">
-                  <!-- {%- include extensions/google-translate.html -%} -->
+                  {%- include extensions/google-translate.html -%}
               </span>
             {%- endif -%}
           </div>
