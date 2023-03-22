@@ -151,6 +151,7 @@ header_pages:
   - archives.html
   - categories.html
   - tags.html
+  - search.html
   - about.md
 
 # Page default value
