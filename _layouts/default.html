@@ -12,8 +12,10 @@
     {%- include extensions/hashlocate.html -%}
 
     {%- include extensions/theme-toggle.html -%}
-
-    {%- include search.html -%}
+    
+    <div class="search-content">
+      {% include_cached search.html %}
+    </div>
 
     {%- include extensions/click-to-top.html -%}
 
